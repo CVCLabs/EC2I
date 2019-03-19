@@ -1,0 +1,20 @@
+#AWS environments
+environments: {
+  'DEV': {'vault-url': 'http://my-dev-vault:8200', 'vault-token': '6ohYodafsdqI5enudsxBS',
+          'aws_access_key_id': '', 'aws_secret_access_key' : ''
+          'regions': [{'name': 'us-east-1', 'sg_isolation': 'sg-06821aaaaaaaab222'},
+                      {'name': 'sa-east-1', 'sg_isolation': 'sg-0ef42qqqqqqqqedcd'} ]},
+
+  'QA': { 'vault-url': 'http://my-qa-vault:8200', 'vault-token': '301a3vdFGrassfVVU8Dlv9T', 
+          'aws_access_key_id': '', 'aws_secret_access_key' : ''
+          'regions': [{'name': 'us-east-1', 'sg_isolation': 'sg-06821gggfbf47b222'},
+                      {'name': 'sa-east-1', 'sg_isolation': 'sg-0ef42dddabba7edcd'} ]},
+
+  'PR': { 'vault-url': 'http://my-prod-vault:8200', 'vault-token': '3GT3pmKYSpotatoEtc8GG', 
+          'aws_access_key_id': '', 'aws_secret_access_key' : ''
+          'regions': [{'name': 'us-east-1', 'sg_isolation': 'sg-06821sssssf47b222'},
+                      {'name': 'sa-east-1', 'sg_isolation': 'sg-0ef42ccccccccedcd'} ]}
+}
+
+#AWS regions being used
+aws_vault_secret_name: 'aws-integration'
